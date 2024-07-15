@@ -104,9 +104,6 @@ source $ZSH/oh-my-zsh.sh
 export STARSHIP_CACHE=~/.starship/cache
 eval "$(starship init zsh)"
 
-
-clear
-
 # Created by `pipx` on 2024-06-18 10:22:23
 export PATH="$PATH:/Users/gassandrid/.local/bin"
 
@@ -114,3 +111,8 @@ eval "$(zoxide init zsh)"
 
 # alias the zoxide command to replace cd
 alias cd="z"
+alias cop="gh copilot suggest"
+
+clear
+
+fortune | tte beams
