@@ -112,6 +112,7 @@ eval "$(zoxide init zsh)"
 # alias the zoxide command to replace cd
 alias cd="z"
 alias cop="gh copilot suggest"
+alias switch="gh auth switch"
 
 clear
 
