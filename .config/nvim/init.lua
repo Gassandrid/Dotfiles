@@ -185,8 +185,8 @@ if vim.g.neovide then
   vim.g.neovide_transparency = 0.7
   vim.g.neovide_scale_factor = 0.7
 
-  vim.g.neovide_padding_top = 5
-  vim.g.neovide_padding_bottom = 5
-  vim.g.neovide_padding_right = 5
-  vim.g.neovide_padding_left = 5
+  vim.g.neovide_padding_top = 8
+  vim.g.neovide_padding_bottom = 8
+  vim.g.neovide_padding_right = 6
+  vim.g.neovide_padding_left = 6
 end

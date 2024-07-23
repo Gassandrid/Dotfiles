@@ -1,0 +1,32 @@
+# Focus the window to the west
+alt - h : yabai -m window --focus west
+
+# Focus the window to the east
+alt - l : yabai -m window --focus east
+
+# Focus the window to the north
+alt - k : yabai -m window --focus north
+
+# Focus the window to the south
+alt - j : yabai -m window --focus south
+
+# Spaces
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+alt - 7 : yabai -m space --focus 7
+
+# moving focussed windows between spaces
+alt + shift - 1 : yabai -m window --space 1; yabai -m space --focus 1
+alt + shift - 2 : yabai -m window --space 2; yabai -m space --focus 2
+alt + shift - 3 : yabai -m window --space 3; yabai -m space --focus 3
+alt + shift - 4 : yabai -m window --space 4; yabai -m space --focus 4
+alt + shift - 5 : yabai -m window --space 5; yabai -m space --focus 5
+alt + shift - 6 : yabai -m window --space 6; yabai -m space --focus 6
+alt + shift - 7 : yabai -m window --space 7; yabai -m space --focus 7
+
+# focus fixer
+alt - f : yabai -m window --focus $(yabai -m query --windows --space | jq '.[0].id')

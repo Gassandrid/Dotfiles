@@ -116,4 +116,4 @@ alias switch="gh auth switch"
 
 clear
 
-fortune | tte beams
+# fortune | tte beams
