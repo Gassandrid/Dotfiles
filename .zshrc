@@ -113,6 +113,7 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 alias cop="gh copilot suggest"
 alias switch="gh auth switch"
+alias bonzuai="cbonsai"
 
 function brew() {
   command brew "$@" 
@@ -125,3 +126,5 @@ function brew() {
 clear
 
 # fortune | tte beams
+
+export PATH=$PATH:/Users/gassandrid/.spicetify

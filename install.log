@@ -1,0 +1,9 @@
+[19:04:54 2024-07-22] FETCHING Version 2.36.15
+[19:04:54 2024-07-22] CREATING /Users/gassandrid/.spicetify
+[19:04:54 2024-07-22] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.36.15/spicetify-2.36.15-darwin-arm64.tar.gz
+[19:04:56 2024-07-22] EXTRACTING /Users/gassandrid/.spicetify/spicetify.tar.gz
+[19:04:56 2024-07-22] SETTING EXECUTABLE PERMISSIONS TO /Users/gassandrid/.spicetify/spicetify
+[19:04:56 2024-07-22] REMOVING /Users/gassandrid/.spicetify/spicetify.tar.gz
+[19:04:56 2024-07-22] APPENDING /Users/gassandrid/.spicetify to PATH in /Users/gassandrid/.zshrc
+[19:04:56 2024-07-22] spicetify v2.36.15 was installed successfully to /Users/gassandrid/.spicetify
+[19:04:56 2024-07-22] Run 'spicetify --help' to get started
