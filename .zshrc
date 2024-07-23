@@ -114,6 +114,14 @@ alias cd="z"
 alias cop="gh copilot suggest"
 alias switch="gh auth switch"
 
+function brew() {
+  command brew "$@" 
+
+  if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
+    sketchybar --trigger brew_update
+  fi
+}
+
 clear
 
 # fortune | tte beams

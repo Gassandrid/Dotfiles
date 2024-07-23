@@ -30,3 +30,8 @@ alt + shift - 7 : yabai -m window --space 7; yabai -m space --focus 7
 
 # focus fixer
 alt - f : yabai -m window --focus $(yabai -m query --windows --space | jq '.[0].id')
+
+alt - space : yabai -m window --toggle float; sketchybar --trigger window_focus
+shift + alt - z : yabai -m window --toggle zoom-fullscreen; sketchybar --trigger window_focus
+alt - z : yabai -m window --toggle zoom-parent; sketchybar --trigger window_focus
+shift + alt - 1 : yabai -m window --space 1 && sketchybar --trigger windows_on_spaces
