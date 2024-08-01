@@ -54,6 +54,9 @@ yabai -m space 4 --label four
 yabai -m space 5 --label five
 yabai -m space 6 --label six
 yabai -m space 7 --label seven
+yabai -m space 8 --label eight
+yabai -m space 9 --label nine
+yabai -m space 0 --label ten
 
 yabai -m config layout bsp
 
@@ -63,4 +66,4 @@ yabai -m signal --add event=moved action="yabai -m window --focus mouse"
 
 echo "yabai configuration loaded.."
 
-borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 &
+borders active_color=0xff767bb5 inactive_color=0xff32334a width=5.0 &

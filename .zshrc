@@ -75,6 +75,14 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source <(fzf --zsh)
+
+
+
+export PATH=$PATH:/Users/gassandrid/.spicetify
+
+export DYLD_FALLBACK_LIBRARY_PATH="$(xcode-select --print-path)/usr/lib/"
+
 
 # User configuration
 
@@ -114,7 +122,8 @@ alias cd="z"
 alias cop="gh copilot suggest"
 alias switch="gh auth switch"
 alias bonzuai="cbonsai"
-
+alias editzsh="nvim ~/.zshrc"
+alias venv_init="python3 -m venv ./ && source ./bin/activate"
 function brew() {
   command brew "$@" 
 
@@ -127,4 +136,3 @@ clear
 
 # fortune | tte beams
 
-export PATH=$PATH:/Users/gassandrid/.spicetify

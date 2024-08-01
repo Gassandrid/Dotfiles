@@ -182,7 +182,7 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 if vim.g.neovide then
   -- Put anything you want to happen only in Neovide hereby
-  vim.g.neovide_transparency = 0.7
+  vim.g.neovide_transparency = 0.9
   vim.g.neovide_scale_factor = 0.7
 
   vim.g.neovide_padding_top = 8
