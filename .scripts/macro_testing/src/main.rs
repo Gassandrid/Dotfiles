@@ -66,9 +66,8 @@ fn write(s: &str) {
 
 fn callback(event: Event) {
     println!("My callback {:?}", event);
-    match event.name {
-        Some(string) => println!("User wrote {:?}", string),
-        None => (),
+    if let Some(string) = event.name {
+        println!("User wrote {:?}", string);
     }
 }
 

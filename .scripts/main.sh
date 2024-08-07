@@ -9,6 +9,10 @@ function say_hello() {
   echo "Hello"
 }
 
+function say_goodbye() {
+  echo "Goodbye"
+}
+
 export resulty=say_hello
 
 source ~/.dotfiles/.scripts/second.sh
