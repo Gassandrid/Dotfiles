@@ -70,6 +70,8 @@ alias editzsh="nvim ~/.zshrc"
 alias venv_init="python3 -m venv ./ && source ./bin/activate"
 alias venv_source="source ./bin/activate"
 
+# ewantype
+alias ewantype="tt"
 
 
 
