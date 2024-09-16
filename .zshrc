@@ -45,13 +45,11 @@ export PATH="$PATH:/Users/gassandrid/.local/bin"
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-
-
-
-
 # wierd fix for opencv rust bindings
 export DYLD_FALLBACK_LIBRARY_PATH="$(xcode-select --print-path)/usr/lib/"
 
+# fasder
+eval "$(fasder --init auto aliases)"
 
 
 
@@ -69,6 +67,7 @@ alias editzsh="nvim ~/.zshrc"
 # because python environemnts suck
 alias venv_init="python3 -m venv ./ && source ./bin/activate"
 alias venv_source="source ./bin/activate"
+alias venv_main="source ~/python_main_venv/bin/activate"
 
 # ewantype
 alias ewantype="tt"
@@ -87,3 +86,4 @@ function brew() {
 
 # clear the screen
 clear
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

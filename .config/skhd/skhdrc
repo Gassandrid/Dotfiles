@@ -46,7 +46,7 @@ shift + alt - 1 : yabai -m window --space 1 && sketchybar --trigger windows_on_s
 cmd + shift + alt - r : yabai --restart-service; skhd --restart-service
 
 # open new alacritty winodw, regardless of whether it is already running
-cmd + alt - 1 : open -na "Alacritty"
+cmd + alt - 1 : open -na "Kitty"
 cmd + alt - 2 : open -na "Neovide"
 cmd + alt - 3 : open -na "Arc"
 cmd + alt - 4 : open -na "Obsidian"
