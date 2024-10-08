@@ -72,6 +72,9 @@ alias venv_main="source ~/python_main_venv/bin/activate"
 # ewantype
 alias ewantype="tt"
 
+# lazygit
+alias lg="lazygit"
+
 
 
 # Sketchybar brew icon updater script
@@ -87,3 +90,4 @@ function brew() {
 # clear the screen
 clear
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+venv_main

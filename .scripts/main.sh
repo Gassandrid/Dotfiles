@@ -16,3 +16,6 @@ function say_goodbye() {
 export resulty=say_hello
 
 source ~/.dotfiles/.scripts/second.sh
+
+# source quartz syncer
+source ~/.dotfiles/.scripts/sync_quartz.sh
