@@ -14,6 +14,9 @@ source ~/.scripts/main.sh
 
 ## ENVIRONMENT VARIABLES
 
+# env api keys
+source ~/.env
+
 # editor:
 export EDITOR="nvim"
 
@@ -91,3 +94,9 @@ function brew() {
 clear
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 venv_main
+
+export XDG_CONFIG_HOME="/Users/gassandrid/.config"
+
+# nu shell, without setting it as our default shell
+nu
+
