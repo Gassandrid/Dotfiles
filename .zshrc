@@ -44,9 +44,6 @@ eval "$(starship init zsh)"
 # Pipx path perms
 export PATH="$PATH:/Users/gassandrid/.local/bin"
 
-# Zoxide
-eval "$(zoxide init zsh)"
-alias cd="z"
 
 # wierd fix for opencv rust bindings
 export DYLD_FALLBACK_LIBRARY_PATH="$(xcode-select --print-path)/usr/lib/"

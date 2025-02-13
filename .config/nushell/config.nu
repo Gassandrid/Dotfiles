@@ -224,8 +224,7 @@ $env.config = {
     }
 
     filesize: {
-        metric: false # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
-        format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, auto
+        unit: "binary"
     }
 
     cursor_shape: {
@@ -906,3 +905,5 @@ alias cd = z
 
 # alias github copilot cli as cop
 alias cop = gh copilot suggest
+
+neofetch
