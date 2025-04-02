@@ -106,5 +106,9 @@ zoxide init nushell | save -f ~/.zoxide.nu
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 
+# Deno environment setup
+$env.DENO_INSTALL = $"($env.HOME)/.deno"
+$env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.DENO_INSTALL)/bin")
+
 clear
 
