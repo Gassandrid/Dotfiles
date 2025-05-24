@@ -53,18 +53,21 @@ cmd + alt - 4 : open -na "Obsidian"
 cmd + alt - 5 : open -na "Spotify"
 cmd + alt - 6 : open -na "Discord"
 
-# increasing window size
-alt + shift - h : yabai -m window --resize right:-50:0
-alt + shift - l : yabai -m window --resize right:+50:0
-alt + shift - k : yabai -m window --resize bottom:0:-50
-alt + shift - j : yabai -m window --resize bottom:0:+50
+# moving windows
+alt + shift - h : yabai -m window --warp west
+alt + shift - l : yabai -m window --warp east
+alt + shift - k : yabai -m window --warp north
+alt + shift - j : yabai -m window --warp south
 
-# swapping windows
-# i only want one hotkey to swap, so i want it to behave like a cycle between windows, where by pressing the hotkey again, it will swap to the next position
-# aka if 3 windows and you swap, it will first swap to the second window, then to the third, then back to the first
-
-alt + shift - s : yabai -m window --swap prev || yabai -m window --swap next
-alt + shift - d : yabai -m window --swap next || yabai -m window --swap prev
+# resize mode (i3/aeroSpace style)
+# shrink width
+alt + ctrl - h : yabai -m window --resize left:-20:0 || yabai -m window --resize right:-20:0
+# grow width
+alt + ctrl - l : yabai -m window --resize right:20:0 || yabai -m window --resize left:20:0
+# shrink height
+alt + ctrl - j : yabai -m window --resize bottom:0:20 || yabai -m window --resize top:0:20
+# grow height
+alt + ctrl - k : yabai -m window --resize top:0:-20 || yabai -m window --resize bottom:0:-20
 
 ## MACROS
 

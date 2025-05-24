@@ -110,5 +110,20 @@ starship init nu | save -f ~/.cache/starship/init.nu
 $env.DENO_INSTALL = $"($env.HOME)/.deno"
 $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.DENO_INSTALL)/bin")
 
+# alias latexmk -pdf -pdflatex=pdflatex -pvc to watchChanges
+alias watchChanges = latexmk -pdf -pdflatex=pdflatex -pvc
+
+# overlay use .virtualenvs/jupynium/bin/activate.nu
+
+# rewrite this for nushell
+# export JAVA_HOME=$(/usr/libexec/java_home -v17
+$env.JAVA_HOME = $(
+    /usr/libexec/java_home -v17
+    | str trim
+    | path expand
+)
+
 clear
+
+
 

@@ -1,0 +1,11 @@
+-- return {
+--   {
+--     "kiyoon/jupynium.nvim",
+--     build = "pip install --user .",
+--     -- build = "pip install . --python=$HOME/.virtualenvs/jupynium/bin/python",
+--     -- build = "pip install . --python=$HOME/python_main_venv/bin/python",
+--     -- build = "conda run --no-capture-output -n jupynium pip install .",
+--   },
+--   "rcarriga/nvim-notify", -- optional
+--   "stevearc/dressing.nvim", -- optional, UI for :JupyniumKernelSelect
+-- }

@@ -96,6 +96,17 @@ export XDG_CONFIG_HOME="/Users/gassandrid/.config"
 
 . "/Users/gassandrid/.deno/env"
 
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
+
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
+export BRAHMS_HOME=/Users/gassandrid/Applications/AgentEnvironment
+PATH=$JAVA_HOME/bin:$PATH
+
+source ~/.zshenv
+
 # nu shell, without setting it as our default shell
 nu
+
+
 

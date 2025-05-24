@@ -3,19 +3,13 @@ return {
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
   opts = {
-    default = {},
     provider = "copilot", -- Recommend using Claude
     auto_suggestions_provider = "copilot",
     copilot = {
-      model = "claude-3.7-sonnet",
-    },
-    web_search_engine = {
-      provider = "tavily", -- tavily, serpapi, searchapi, google or kagi
+      model = "gemini-2.5-pro",
     },
   },
-  -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
-  -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows
   dependencies = {
     "nvim-treesitter/nvim-treesitter",
     "stevearc/dressing.nvim",
