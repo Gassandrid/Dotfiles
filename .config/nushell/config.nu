@@ -906,4 +906,9 @@ alias cd = z
 # alias github copilot cli as cop
 alias cop = gh copilot suggest
 
+# alias latexmk -pdf -pdflatex=pdflatex -pvc to watchChanges
+alias watchChanges = latexmk -pdf -pdflatex=pdflatex -pvc
+
+clear
+
 neofetch

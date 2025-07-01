@@ -5,10 +5,23 @@ return {
   opts = {
     provider = "copilot", -- Recommend using Claude
     auto_suggestions_provider = "copilot",
-    copilot = {
-      model = "gemini-2.5-pro",
+    providers = {
+      copilot = {
+        model = "claude-sonnet-4",
+      },
+      -- ollama = {
+      --   endpoint = "http://localhost:11434",
+      --   model = "Deepseek-r1:8b",
+      -- },
     },
   },
+  web_search_engine = {
+    provider = "tavily", -- tavily, serpapi, searchapi, google, kagi, brave, or searxng
+    proxy = nil, -- proxy support, e.g., http://127.0.0.1:7890
+  },
+  -- behaviour = {
+  --   enable_cursor_planning_mode = true, -- enable cursor planning mode!
+  -- },
   build = "make",
   dependencies = {
     "nvim-treesitter/nvim-treesitter",

@@ -122,8 +122,3 @@ $env.JAVA_HOME = $(
     | str trim
     | path expand
 )
-
-clear
-
-
-
