@@ -13,7 +13,7 @@ yabai -m signal --add event=window_destroyed action="sketchybar --trigger window
 
 $HOME/.config/yabai/create_spaces.sh
 
-yabai -m config external_bar all:49:0 \
+yabai -m config external_bar all:37:0 \
 	window_border on \
 	mouse_follows_focus on \
 	focus_follows_mouse autofocus \
@@ -38,10 +38,10 @@ yabai -m config external_bar all:49:0 \
 	mouse_action1 move \
 	mouse_action2 resize \
 	mouse_drop_action swap \
-	bottom_padding 10 \
-	left_padding 10 \
-	right_padding 10 \
-	window_gap 8
+	bottom_padding 3 \
+	left_padding 3 \
+	right_padding 3 \
+	window_gap 6
 
 # ignored apps
 yabai -m rule --add app="^System Settings$" manage=off

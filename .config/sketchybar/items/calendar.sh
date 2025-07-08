@@ -1,18 +1,20 @@
 #!/bin/bash
 
 calendar=(
-	icon=cal
-	icon.font="$FONT:Black:12.0"
-	icon.padding_right=0
-	label.width=45
-	label.align=right
-	padding_left=15
-	padding_right=15
+	icon=$CLOCK
+	icon.color=0xffed8796
 	update_freq=30
-	script="$PLUGIN_DIR/calendar.sh"
-	click_script="$PLUGIN_DIR/zen.sh"
+	script="$PLUGIN_DIR/clock.sh"
+)
+
+status_bracket2=(
+	background.color=$BACKGROUND_1
+	background.border_color=$BACKGROUND_2
+	background.border_width=2
 )
 
 sketchybar --add item calendar right \
-	--set calendar "${calendar[@]}" \
-	--subscribe calendar system_woke
+	--set calendar "${calendar[@]}"
+
+sketchybar --add bracket clocks calendar \
+	--set clocks "${status_bracket2[@]}"

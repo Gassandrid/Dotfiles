@@ -910,5 +910,3 @@ alias cop = gh copilot suggest
 alias watchChanges = latexmk -pdf -pdflatex=pdflatex -pvc
 
 clear
-
-neofetch
